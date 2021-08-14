@@ -1,0 +1,82 @@
+.game-container{
+    background-image: url(./images/bgGame.png);
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'gameOanhTuTi';
+}
+
+@font-face {
+    font-family: 'gameOanhTuTi';
+    src: url(./font/Pony.ttf);
+}
+
+.speech-bubble {
+	position: relative;
+	background: #fff;
+    border: 5px solid #45D994;
+	border-radius: .4em;
+	width: 100px;
+    height: 100px;
+    left: 45%;
+    margin-top:10px
+}
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: -1%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 35px solid transparent;
+	border-top-color: #45D994;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -17.5px;
+	margin-bottom: -35px;
+}
+.groupButton button {
+    margin: 5px;
+    text-align: center;
+    padding:5px;
+}
+.groupButton button:hover {
+    background-color: #45D994
+}
+.groupButton button:focus {
+    outline: 3px solid yellow;
+}
+.groupButton img {
+    width: 20px;
+    height: 20px;
+    text-align:center;
+}
+
+.modal-header{
+    padding: 0;
+}
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+    height:300px;
+    overflow: auto;
+}
+.nav{
+    flex-wrap: nowrap;
+}
+.nav-link {
+    padding: 0.5rem 10rem;
+    color:#7d8083
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #007bff;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.centerItem {
+    text-align: center;
+    line-height: 300px;
+    vertical-align: middle;
+}
